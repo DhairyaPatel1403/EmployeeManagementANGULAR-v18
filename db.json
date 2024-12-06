@@ -1,0 +1,90 @@
+{
+  "employees": [
+    {
+      "id": "fa9f",
+      "name": "Diego2",
+      "salary": 2000000,
+      "position": "Co-Ambassador"
+    },
+    {
+      "id": "8416",
+      "salary": 34000000,
+      "position": "Owner",
+      "name": "No Name"
+    },
+    {
+      "id": "62fa",
+      "name": "Employee879",
+      "salary": 2000000
+    },
+    {
+      "id": "307d",
+      "name": "DhairyaEzz",
+      "salary": 3000000,
+      "position": "Senior Designer"
+    },
+    {
+      "id": "0e05",
+      "name": "Jon Doe",
+      "salary": 7000000,
+      "position": "Marketing Team Lead"
+    },
+    {
+      "id": "2bd7",
+      "name": "E900",
+      "salary": 5000000,
+      "position": "SDEEE"
+    },
+    {
+      "id": "0be2",
+      "name": "Employee8789",
+      "salary": 30000000,
+      "position": "Officer CE"
+    },
+    {
+      "id": "0383",
+      "name": "Employee404",
+      "salary": 91209389108301,
+      "position": "Error Not Found!!!"
+    },
+    {
+      "id": "f339",
+      "name": "DemoEmployee",
+      "salary": 3000000,
+      "position": "SDE"
+    },
+    {
+      "id": "2908",
+      "name": "EMPLO",
+      "salary": 1236512,
+      "position": "SDE"
+    },
+    {
+      "id": "12f3",
+      "name": "Spin23",
+      "salary": 21339102,
+      "position": "SDE Senior"
+    },
+    {
+      "id": "197b",
+      "name": "DateEmployee",
+      "salary": 32787232,
+      "position": "SDE",
+      "date": "2013-04-12"
+    },
+    {
+      "id": "6c65",
+      "name": "HelloSEmp",
+      "position": "SDESDE",
+      "salary": 2000000,
+      "date": "1111-11-11"
+    },
+    {
+      "id": "616f",
+      "name": "Demoemp",
+      "position": "dsa engineer",
+      "salary": 23238009,
+      "date": "3012-12-20"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+
+<input [(ngModel)]="searchText"/>
+<button (click)="search()">Search</button>
+
+
+
+<div class="container">
+    <div class="row">
+      @for (Employee of Employees; track Employee) {
+        <div class="col-4">
+          <div class="card m-4 p-3" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">{{Employee.name}}</h5>
+              <p class="card-text">Salary of this employee is - {{Employee.salary}} as {{Employee.position}}.</p>
+              <button class="btn btn-danger" (click)="openModal(Employee) ">Fire Employee</button>
+            </div>
+          </div>
+        </div>
+      }
+  
+    </div>
+  
+  </div>
+  
+

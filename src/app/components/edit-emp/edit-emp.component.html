@@ -1,0 +1,57 @@
+
+<!-- @if(password=="dhairya123"){ -->
+
+
+<!-- 
+<div>
+  @if(showInputToChange){
+    <span>Change Position of {{nameToShow}}</span>
+      <input [(ngModel)]="changedPosition">
+      <button class="btn-primary" (click)="updatePosition()">Change</button>
+  }
+  
+</div> -->
+
+
+    <div class="container">
+        <div class="row">
+          @for (Employee of Employees; track Employee) {
+            <div class="col-4">
+              <div class="card m-4 p-3" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">{{Employee.name}}</h5>
+                  <p class="card-text">Salary of this employee is <b>{{Employee.salary}}</b> as <b> {{Employee.position}} </b></p>
+                </div>
+            
+                <div>
+                    <button (click)="increementSalary(Employee)" class="btn btn-success m-2">Increement salary</button>
+                    <button (click)="decreementSalary(Employee)" class="btn btn-danger m-2">Decreement salary</button>
+                    <button (click)="changeEmployeeModal(Employee)">Change Details</button>
+                </div>
+                <!-- <button class="" (click)="changeDialogAppears(Employee)">Change Details</button> -->
+              </div>
+            </div>
+          }
+
+
+          
+
+        </div>
+      
+    </div>
+
+    <div class="container">
+        
+    </div>
+
+<!-- } -->
+<!-- @else{
+
+    <div>
+
+        <input class="container m-5" [(ngModel)]="password">
+
+    </div>
+
+} -->
+

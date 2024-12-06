@@ -1,0 +1,18 @@
+
+
+<ul ngbNav #nav="ngbNav" class="nav-tabs">
+	<li [ngbNavItem]="1">
+		<button routerLink="/add-employee" ngbNavLink>Add</button>
+		
+	</li>
+	<li [ngbNavItem]="2">
+		<button routerLink="/show-employees"  ngbNavLink>Show</button>
+		
+	</li>
+	<li [ngbNavItem]="3">
+		<button routerLink="/edit-employees"  ngbNavLink>Edit</button>
+		
+	</li>
+</ul>
+
+<router-outlet></router-outlet>

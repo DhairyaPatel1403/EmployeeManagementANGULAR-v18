@@ -1,0 +1,24 @@
+
+    <div class="modal-header">
+
+        <h4 class="modal-title" id="modal-basic-title">Edit Employee Details</h4>
+        <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    
+    <div class="modal-body">
+
+        <div class="p-2">
+            <span>Change the Name - </span><input placeholder="{{employee.name}}" [(ngModel)]="name" type="text">
+        </div>
+        
+        <div class="p-2">
+            <span>Change the Position - </span><input placeholder="{{employee.position}}" [(ngModel)]="position" type="text">
+        </div>
+        
+        
+        <button type="submit" (click)="passBack()" class="btn btn-primary"  >Edit Employee</button>
+    </div>
+
+

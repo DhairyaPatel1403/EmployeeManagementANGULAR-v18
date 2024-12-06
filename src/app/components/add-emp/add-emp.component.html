@@ -1,0 +1,88 @@
+
+
+
+<form [formGroup]="employeeForm" (ngSubmit)="onSubmit()" [ngStyle]="{border:'1px solid grey'}" class="container p-4 ml-4 m-2">
+    
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Name</span>
+        <input type="text" name="name" id="name" placeholder="Add your Name here!" 
+        formControlName="name">
+
+        @if(employeeForm.controls.name.touched && employeeForm.controls.name.errors?.['required']){
+
+            <code>
+                *Name is required.
+            </code>
+
+        }
+        @if(employeeForm.controls.name.errors?.['maxLength']){
+
+            <code>
+                Name must be less than 50 characters long
+            </code>
+
+        }
+
+
+      </div>      
+      
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Position</span>
+        <input type="text" name="position" id="position" placeholder="Add Position here!"
+        formControlName="position">
+
+        @if(employeeForm.controls.position.touched && employeeForm.controls.position.errors?.['required']){
+
+            <code>
+                *Position is required.
+            </code>
+
+        }
+
+
+      </div>
+      
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Salary</span>
+        <input type="number" name="salary" id="salary"
+        formControlName="salary">
+        @if(employeeForm.controls.salary.touched && employeeForm.controls.salary.errors?.['min']){
+
+            <code>
+                Salary can't be below 0!
+            </code>
+
+        }
+        @if(employeeForm.controls.salary.touched && employeeForm.controls.salary.errors?.['max']){
+
+            <code>
+                Salary can't be above 9999999999999!
+            </code>
+
+        }
+      </div>
+      
+      <div>
+        <span>Joining Date of employee</span>
+        <input class="form-control"
+               placeholder="yyyy-mm-dd"
+               name="date"
+               formControlName="date"
+               type="date" ngbDatepicker />
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Add Employee</button>
+      
+</form>
+
+@if (showToastForEmptySubmit) {
+    <div class="container">
+        <ngb-toast header="Error in Adding Employee" [autohide]="false" (hidden)="showToastForEmptySubmit = false">
+            Can't add employee with empty details
+        </ngb-toast>
+    </div>
+    
+}
+      
+
+<!-- routerLink="/show-employees" -->
